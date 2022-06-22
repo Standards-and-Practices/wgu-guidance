@@ -1,0 +1,9 @@
+{
+  "name": "wgu-guidance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Standards-and-Practices/wgu-guidance.git",
+  "author": "David Petersen <dp@davidp.us>",
+  "license": "MIT"
+}
+ls

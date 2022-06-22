@@ -21,8 +21,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .domain-checkbox {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
+    text-align: center;  
 }
 .domain-checkbox input[type="checkbox"] {
     display: none;
