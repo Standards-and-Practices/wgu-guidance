@@ -1,0 +1,54 @@
+/*======================================
+Theme Name: WGU Guidance Site
+Theme URI: https://www.wgu.edu
+Description: A child theme for elementor
+Version: 1.0
+Author: David Petersen
+Author URI: https://www.linkedin.com/in/david-james-petersen
+Template: hello-elementor
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+======================================*/
+
+/* You can start adding your own styles here. Use !important to overwrite styles if needed. */
+
+.domains-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+.domain-checkbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.domain-checkbox input[type="checkbox"] {
+    display: none;
+}
+.domain-checkbox input[type="checkbox"]:checked + label{
+    opacity: 1;
+}
+.domain-checkbox label {
+    opacity: .5;
+}
+.domain-button {
+    height: 50px;
+}
+.domain-checkbox label span {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 160px;
+}
+.dei{ color: #840028; }
+.accessibility{ color:  #E66E24; }
+.sel{ color: #F79843; }
+.id{ color: #C69214; }
+.ad{ color: #42892E; }
+.vd{ color: #49B1B3; }
+.prototyping{ color: #327DA9; }
+.pd{ color: #6A5ACD; }
+.it{ color: #63666A; }
+.any{ color: #003057; }
