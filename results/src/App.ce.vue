@@ -1,7 +1,7 @@
 <template>
 	<div class="text-black flex flex-row leading-6">
 		<div class="flex flex-col pl-2 text-left">
-			<img src="./images/visual-design.svg" class="text-black relative block h-auto w-40 max-w-full align-middle" style="top: 50px" />
+			<img src="../images/visual-design.svg" class="text-black relative block h-auto w-40 max-w-full align-middle" style="top: 50px" />
 			<svg width="39" height="251" viewBox="0 0 39 251" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black block align-middle">
 				<path d="M37 2.15076C15.2759 2.15046 2 14.4657 2 36.0066C2 57.5476 20.1034 68.6529 37 68.6529" stroke="#49B1B3" stroke-width="4" stroke-linecap="square" class=""></path>
 				<line x1="37" y1="72.6529" x2="37" y2="136.653" stroke="#49B1B3" stroke-width="4" stroke-linecap="square" class=""></line>
@@ -13,8 +13,8 @@
 			<span class="text-teal-400 m-0 p-0 font-bold uppercase not-italic tracking-widest" style="font-family: 'Open Sans'; font-size: 8px; line-height: 11px">Visual Design</span>
 			<div class="text-black flex flex-row">
 				<h2 class="m-0 p-0 text-2xl font-bold not-italic leading-9" style="font-family: 'Open Sans'">The Title Goes Here</h2>
-				<img class="ml-2 block h-auto w-4 max-w-full align-middle" src="./images/plus.svg" alt="Show Guidance" />
-				<img class="ml-2 block h-auto w-4 max-w-full align-middle" src="./images/minus.svg" alt="Hide Guidance" />
+				<img class="ml-2 block h-auto w-4 max-w-full align-middle" src="../images/plus.svg" alt="Show Guidance" />
+				<img class="ml-2 block h-auto w-4 max-w-full align-middle" src="../images/minus.svg" alt="Hide Guidance" />
 			</div>
 			<div class="text-teal-400 flex text-center font-bold uppercase tracking-widest" style="font-family: 'Open Sans'; font-size: 8px; line-height: 11px; flex-flow: row nowrap">
 				<svg
