@@ -13,6 +13,9 @@
 function wgu_theme_child_scripts()
 {
     wp_enqueue_style( 'wgu-theme-stylesheet', get_stylesheet_uri(), array( 'hello-elementor' ), wp_get_theme());
+    wp_enqueue_script( 'wgu-results-script', get_stylesheet_directory_uri(). '/results/dist/assets/index.js');
+    wp_enqueue_style( 'wgu-results-styles', get_stylesheet_directory_uri(). '/results/dist/assets/index.css');
+
 } 
 add_action('wp_enqueue_scripts', 'wgu_theme_child_scripts');
 
