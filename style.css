@@ -12,42 +12,144 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* You can start adding your own styles here. Use !important to overwrite styles if needed. */
 
-.domains-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: center;
+.dei {
+	color: #840028;
+}
+.accessibility {
+	color: #e66e24;
+}
+.sel {
+	color: #f79843;
+}
+.id {
+	color: #c69214;
+}
+.ad {
+	color: #42892e;
+}
+.vd {
+	color: #49b1b3;
+}
+.prototyping {
+	color: #327da9;
+}
+.pd {
+	color: #6a5acd;
+}
+.it {
+	color: #63666a;
+}
+.any {
+	color: #003057;
+}
+.domain-icon {
+    position: relative;
+    top: 50px;
+    width: 150px;
+    display: block;
+}
+.domains-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: center;
 }
 .domain-checkbox {
-    display: flex;
-    flex-direction: column;
-    text-align: center;  
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
-.domain-checkbox input[type="checkbox"] {
-    display: none;
+.domain-checkbox input[type='checkbox'] {
+	display: none;
 }
-.domain-checkbox input[type="checkbox"]:checked + label{
-    opacity: 1;
+.domain-checkbox input[type='checkbox']:checked + label {
+	opacity: 1;
 }
 .domain-checkbox label {
-    opacity: .5;
+	opacity: 0.5;
 }
 .domain-button {
-    height: 50px;
+	height: 50px;
 }
 .domain-checkbox label span {
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    width: 160px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	width: 160px;
 }
-.dei{ color: #840028; }
-.accessibility{ color:  #E66E24; }
-.sel{ color: #F79843; }
-.id{ color: #C69214; }
-.ad{ color: #42892E; }
-.vd{ color: #49B1B3; }
-.prototyping{ color: #327DA9; }
-.pd{ color: #6A5ACD; }
-.it{ color: #63666A; }
-.any{ color: #003057; }
+.guidance-row {
+	display: flex;
+	flex-direction: row;
+}
+.guidance-col {
+	display: flex;
+	flex-direction: column;
+    padding-left: 10px;
+    text-align: left;
+}
+.domain {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 11px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #49b1b3;
+}
+.title {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+}
+.title-row {
+	display: flex;
+	flex-direction: row;
+}
+.tags {
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 11px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #49b1b3;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.vd {
+	fill: #49b1b2;
+}
+.tags svg {
+	padding-right: 10px;
+}
+.toggle-button {
+	width: 16px;
+	margin-left: 10px;
+}
+.standard {
+	margin-top: 16px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: #63666a;
+}
+.guidance {
+	margin-top: 16px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	color: #63666a;
+}

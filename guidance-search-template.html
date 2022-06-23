@@ -1,69 +1,31 @@
-<style>
-	.guidance-row {
-		display: flex;
-		flex-direction: column;
-	}
-	.domain {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 8px;
-		line-height: 11px;
-		padding: 0;
-		margin: 0;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		color: #49b1b3;
-	}
-	.title {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 24px;
-		padding: 0;
-		margin: 0;
-	}
-	.title-row {
-		display: flex;
-		flex-direction: row;
-	}
-	.tags {
-		font-family: 'Open Sans';
-		font-weight: 700;
-		font-size: 8px;
-		line-height: 11px;
-		letter-spacing: 1.5px;
-		text-align: center;
-        text-transform: uppercase;
-		color: #49b1b3;
-		display: flex;
-		flex-direction: row;
-        flex-wrap: nowrap;
-	}
-	.vd {
-		fill: #49b1b2;
-	}
-    .tags svg {
-        padding-right: 10px;
-    }
-	.toggle-button {
-		width: 16px;
-		margin-left: 10px;
-	}
-</style>
-
-<section class="guidance-row">
-	<span class="domain">Visual Design</span>
-	<div class="title-row">
-		<h2 class="title">The Title Goes Here</h2>
-		<img class="toggle-button" src="./images/plus.svg" alt="Show Guidance" />
-		<img class="toggle-button" src="./images/minus.svg" alt="Hide Guidance" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./style.css" />
+<div class="guidance-row">
+	<div class="guidance-col min-width">
+		<img src="./images/visual-design.svg" class="domain-icon" />
+		<svg width="39" height="251" viewBox="0 0 39 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M37 2.15076C15.2759 2.15046 2 14.4657 2 36.0066C2 57.5476 20.1034 68.6529 37 68.6529" stroke="#49B1B3" stroke-width="4" stroke-linecap="square" />
+			<line x1="37" y1="72.6529" x2="37" y2="136.653" stroke="#49B1B3" stroke-width="4" stroke-linecap="square" />
+			<line x1="37" y1="140.653" x2="37" y2="200.653" stroke="#A4D8D9" stroke-width="4" stroke-linecap="square" stroke-dasharray="8 12" />
+			<line x1="37" y1="204.653" x2="37" y2="248.653" stroke="#A4D8D9" stroke-width="4" stroke-linecap="square" stroke-dasharray="8 12" />
+		</svg>
 	</div>
-	<div class="tags">
-		<svg width="8" height="9" viewBox="0 0 8 9" fill="none" class="vd" xmlns="http://www.w3.org/2000/svg">
-			<path
-				d="M7.80465 0.773998C7.79537 0.680949 7.72095 0.60659 7.62789 0.597238L4.27905 0.401855C4.22325 0.401855 4.17672 0.420478 4.13954 0.457659L0.0558202 4.54138C-0.0186067 4.61581 -0.0186067 4.72741 0.0558202 4.80185L3.60001 8.34604C3.67443 8.42046 3.78604 8.42046 3.86047 8.34604L7.9442 4.26231C7.98138 4.22513 8 4.17861 8 4.1228L7.80462 0.773965L7.80465 0.773998ZM6.81862 2.35538C6.60468 2.56931 6.26045 2.56931 6.04653 2.35538C5.83259 2.14144 5.83259 1.7972 6.04653 1.58328C6.26046 1.36935 6.6047 1.36935 6.81862 1.58328C7.03256 1.79722 7.03256 2.14146 6.81862 2.35538Z"
-			/>
-		</svg> Use visual design to help me learn
+	<div class="guidance-col">
+		<span class="domain">Visual Design</span>
+		<div class="title-row">
+			<h2 class="title">The Title Goes Here</h2>
+			<img class="toggle-button" src="./images/plus.svg" alt="Show Guidance" />
+			<img class="toggle-button" src="./images/minus.svg" alt="Hide Guidance" />
+		</div>
+		<div class="tags">
+			<svg width="8" height="9" viewBox="0 0 8 9" fill="none" class="vd" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M7.80465 0.773998C7.79537 0.680949 7.72095 0.60659 7.62789 0.597238L4.27905 0.401855C4.22325 0.401855 4.17672 0.420478 4.13954 0.457659L0.0558202 4.54138C-0.0186067 4.61581 -0.0186067 4.72741 0.0558202 4.80185L3.60001 8.34604C3.67443 8.42046 3.78604 8.42046 3.86047 8.34604L7.9442 4.26231C7.98138 4.22513 8 4.17861 8 4.1228L7.80462 0.773965L7.80465 0.773998ZM6.81862 2.35538C6.60468 2.56931 6.26045 2.56931 6.04653 2.35538C5.83259 2.14144 5.83259 1.7972 6.04653 1.58328C6.26046 1.36935 6.6047 1.36935 6.81862 1.58328C7.03256 1.79722 7.03256 2.14146 6.81862 2.35538Z"
+				/>
+			</svg>
+			Use visual design to help me learn
+		</div>
+		<div class="standard">Prefer to deliver math, chemistry, computer code, and other equations as character content rather than as images.</div>
+		<div class="guidance">Image content can’t be selected for use in copying and pasting, and readers are unable to read out the visual content in the image.</div>
 	</div>
-</section>
+</div>
