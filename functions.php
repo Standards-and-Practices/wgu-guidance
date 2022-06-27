@@ -25,3 +25,9 @@ if (!function_exists('get_category_label')) {
         return "<span class='category' style='color: rgba(" . implode(',', $color) . ")'>$category->name</span>";
     }
 }
+
+add_filter( 'facetwp_assets', function( $assets ) {
+    FWP()->display->json['expand'] = '<span class="facet-expand"></span>';
+    FWP()->display->json['collapse'] = '<span class="facet-collapse"></span>';
+    return $assets;
+});
