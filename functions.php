@@ -1,13 +1,6 @@
 <?php
 
 /**
- * Theme Coder Child functions and definitions
- *
- * @package Theme Coder
- *
- */
-
-/**
  *  Enqueue scripts and styles.
  */
 function wgu_theme_child_scripts()
@@ -16,7 +9,10 @@ function wgu_theme_child_scripts()
 } 
 add_action('wp_enqueue_scripts', 'wgu_theme_child_scripts');
 
-/* You can add your own php functions and code snippets below */
+
+/**
+ *  Add category label as color
+ */
 if (!function_exists('get_category_label')) {
 
     function get_category_label($category)
@@ -26,6 +22,9 @@ if (!function_exists('get_category_label')) {
     }
 }
 
+/**
+ *  Fix facet wp collapse styling
+ */
 add_filter( 'facetwp_assets', function( $assets ) {
     FWP()->display->json['expand'] = '<span class="facet-expand"></span>';
     FWP()->display->json['collapse'] = '<span class="facet-collapse"></span>';

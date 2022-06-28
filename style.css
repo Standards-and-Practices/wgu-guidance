@@ -10,44 +10,147 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ======================================*/
 
-/* You can start adding your own styles here. Use !important to overwrite styles if needed. */
-
-.domains-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: center;
+.domains-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
 }
 .domain-checkbox {
-    display: flex;
-    flex-direction: column;
-    text-align: center;  
-}
-.domain-checkbox input[type="checkbox"] {
-    display: none;
-}
-.domain-checkbox input[type="checkbox"]:checked + label{
-    opacity: 1;
-}
-.domain-checkbox label {
-    opacity: .5;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 .domain-button {
-    height: 50px;
+	height: 50px !important;
 }
-.domain-checkbox label span {
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    width: 160px;
+.domain-checkbox span {
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	width: 125px;
 }
-.dei{ color: #840028; }
-.accessibility{ color:  #E66E24; }
-.sel{ color: #F79843; }
-.id{ color: #C69214; }
-.ad{ color: #42892E; }
-.vd{ color: #49B1B3; }
-.prototyping{ color: #327DA9; }
-.pd{ color: #6A5ACD; }
-.it{ color: #63666A; }
-.any{ color: #003057; }
+.dei {
+	color: #840028;
+}
+.accessibility {
+	color: #e66e24;
+}
+.sel {
+	color: #f79843;
+}
+.id {
+	color: #c69214;
+}
+.ad {
+	color: #42892e;
+}
+.vd {
+	color: #49b1b3;
+}
+.prototyping {
+	color: #327da9;
+}
+.pd {
+	color: #6a5acd;
+}
+.it {
+	color: #63666a;
+}
+.any {
+	color: #003057;
+}
+abbr.c2c-text-hover {
+	text-decoration: none;
+	border-bottom: none;
+}
+.facetwp-checkbox {
+	background: url('https://guidance.wgu.edu/standards/wp-content/uploads/sites/2/2022/06/deselect.png') 0 50% no-repeat !important;
+	background-size: 14px 14px;
+	margin-bottom: 4px;
+	padding-left: 20px;
+	cursor: pointer;
+	display: flex;
+}
+.facetwp-checkbox.checked {
+	background-image: url('https://guidance.wgu.edu/standards/wp-content/uploads/sites/2/2022/06/select.png') !important;
+}
+.facetwp-checkbox .facetwp-expand {
+	display: inline;
+}
+.facetwp-expand {
+	background: url('https://guidance.wgu.edu/standards/wp-content/uploads/sites/2/2022/06/plus.png') no-repeat !important;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: 4px 15px;
+}
+.facet-collapse {
+	background: url('https://guidance.wgu.edu/standards/wp-content/uploads/sites/2/2022/06/minus.png') no-repeat !important;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+.facetwp-reset {
+	padding: 4px 12px;
+	text-transform: uppercase;
+	background: #f6be00; /* Accent Yellow */
+	border-radius: 20px;
+	color: #003057; /* WGU Blue */
+}
+.bgsqdo {
+	padding-left: 24px;
+}
+.the-title {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	color: #000000;
+}
+.the-title a {
+	color: #000000;
+}
+.the-domains {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 11px;
+	text-transform: uppercase;
+}
+.principle {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.guidance-wrapper {
+	min-height: 300px;
+}
+.the-guidance h6 {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	color: #63666a;
+}
+.answer-mark {
+	position: absolute;
+	margin-left: -75px;
+}
+.answer-mark svg {
+	position: absolute;
+}
+.answer-mark img {
+	margin-top: 10px;
+	margin-left: 12px;
+}
