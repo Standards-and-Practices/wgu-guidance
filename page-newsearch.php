@@ -18,6 +18,10 @@ $search_args = array(
 
 $search = new WP_Query( $search_args );
 
+echo '<pre>';
+var_dump($search);
+echo '</pre>';
+
 while (have_posts()) : the_post();
 
     $principles = get_the_terms(get_the_ID(), 'principles');
