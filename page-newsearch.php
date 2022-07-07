@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Search Page
+Template Name: Search 
 */
 
 if (!defined('ABSPATH')) {
@@ -10,10 +10,13 @@ if (!defined('ABSPATH')) {
 // Get WP Header
 get_header();
 
-global $query_string;
+$search_args = array( 
+  'post_type' => 'standards',
+  'post_status' => 'publish',
+  's' => 'Design'
+);
 
-wp_parse_str( $query_string, $search_query );
-$search = new WP_Query( $search_query );
+$search = new WP_Query( $search_args );
 
 echo '<pre>';
 var_dump($search);
