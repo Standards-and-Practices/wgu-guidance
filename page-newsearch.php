@@ -22,7 +22,7 @@ echo '<pre>';
 var_dump($search);
 echo '</pre>';
 
-while (have_posts()) : the_post();
+foreach ($search->posts as $post) {
 
     $principles = get_the_terms(get_the_ID(), 'principles');
     $domains = get_the_terms(get_the_ID(), 'domains');
@@ -70,6 +70,5 @@ while (have_posts()) : the_post();
 
     </div>
 <?php
-endwhile;
-
+}
 get_footer();
