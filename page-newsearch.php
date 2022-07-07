@@ -20,8 +20,6 @@ $search = new WP_Query( $search_args );
 
 while (have_posts()) : the_post();
 
-if(get_post_type(get_the_ID()) == 'post') {
-
     $principles = get_the_terms(get_the_ID(), 'principles');
     $domains = get_the_terms(get_the_ID(), 'domains');
     $domains_css = join(' ', wp_list_pluck($domains, 'slug'));
@@ -68,7 +66,6 @@ if(get_post_type(get_the_ID()) == 'post') {
 
     </div>
 <?php
-}
 endwhile;
 
 get_footer();
