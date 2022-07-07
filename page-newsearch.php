@@ -13,7 +13,7 @@ get_header();
 $search_args = array( 
   'post_type' => 'standards',
   'post_status' => 'publish',
-  's' => 'Design'
+  // 's' => 'Design'
 );
 
 $search = new WP_Query( $search_args );
