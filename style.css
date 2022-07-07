@@ -143,14 +143,3 @@ abbr.c2c-text-hover {
 	align-items: center;
 	color: #63666a;
 }
-.answer-mark {
-	position: absolute;
-	margin-left: -75px;
-}
-.answer-mark svg {
-	position: absolute;
-}
-.answer-mark img {
-	margin-top: 10px;
-	margin-left: 12px;
-}
