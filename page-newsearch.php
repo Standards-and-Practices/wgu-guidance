@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Search Page
+*/
 
 if (!defined('ABSPATH')) {
   exit(); // Exit if accessed directly.
